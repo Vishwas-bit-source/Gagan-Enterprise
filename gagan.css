@@ -1,0 +1,263 @@
+/* CSS section  */
+*{
+    margin: 0px;
+    padding: 0px 0px;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:40px;
+
+}
+
+#navbar{ 
+    display: flex;
+    padding: 0px 0px;
+    background-color: black;
+    
+}
+
+#navbar::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    padding: 0px 2px;
+    top: 0px;
+    display: flex;
+}
+#logo img{
+    border-radius: 45px;
+
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    display: flex;
+    flex-direction: row;
+    padding: 28px 30px;
+}
+
+#navbar ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+   
+
+}
+#navbar ul li a:hover{
+    color: grey;   
+    background-color: white;
+    border-radius: 10px;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    border-radius: 50px;
+    padding: 0px 100px;
+    /* border:  solid red; */
+    flex-direction: column;
+    /* padding: 3px 200px; */
+
+}
+#home::before{
+    content: "";
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmEWDWK12bm-_06bY4ozi55QoiunTUYVb4Q&usqp=CAU) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    /* height: 14px; */
+    color: Black;
+    font-size: 50px;
+    text-align: center;
+    /* top: 800px; */
+}
+h1::before{
+    background: linear-gradient(90deg, transparent 0%,#000 5%, #000 100%);
+    animation: animate 10s linear forwards;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+
+/* @keyframes  h1{
+    0%{
+        left: -20%;
+
+    }
+    50%{
+      
+      left: 120%;
+    }
+    100%{
+        left: -20%;
+    }
+} */
+@media(max-width:500rem){
+    html{
+        font-size: 100%;
+    }
+}
+@media(max-width:900rem){
+    html{
+        font-size: 90%;
+    }
+}
+#home p{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+}
+#About h1{
+    font-size: 25px;
+    text-decoration: underline;
+    
+}
+#About {
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+#About .box{
+    
+    border: 2px solid brown;
+    margin: 3px 45px;
+    padding: 34px;
+    display: flexbox;
+    width: 30%;
+    margin-bottom: 245px;
+    position:static;
+    text-decoration: underline;
+
+    text-align: center;
+   
+    right: auto;
+    top: auto;
+   
+    border-radius: 15px;
+    background-color:grey;
+    margin-bottom: 20px;
+}
+.Explore{
+    height: 20px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    /* padding: 5px 5px; */
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+#Services{
+    display: flex;
+    
+    height: 400px;
+    border-radius: 10px;
+    background: url(https://media.istockphoto.com/vectors/horizontal-vector-illustration-of-an-empty-sky-blue-coloured-grungy-vector-id1139678803?k=20&m=1139678803&s=612x612&w=0&h=jGhaWq_34qr6OQlJMlf4doDv7txteI0fVPDFG3sPzew=) no-repeat center center/cover;
+    padding: 0px 100px;
+
+    
+    flex-direction: column;
+    
+
+}
+#Services::before {
+   
+    content: "";
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPmEWDWK12bm-_06bY4ozi55QoiunTUYVb4Q&usqp=CAU) no-repeat center center/cover;
+    top: 5px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+  
+
+#Services ul   {
+    height: 200px;
+    padding: 50px 5px;
+    font-size: 25px;
+    line-height: 50px;
+    /* text-decoration: ; */
+    
+}
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+    
+
+#About .box img{
+    
+    margin: auto;
+    display: block;
+    /* cursor: pointer; */
+    
+}
+
+
+.item { 
+    height: 20px;
+    text-decoration: none;
+    margin: auto;
+    display:  block;
+    padding: 20px 5px;
+    text-align: left;
+    
+}
+
+footer{
+    background-color: black;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    bottom: auto;
+    color: white;
+
+}
